@@ -11,4 +11,4 @@ const microFn = async (req, res) => {
   return response.data
 }
 
-module.exports = cache(60 * 60 * 1000, cors(microFn)) // One hour data caching
+module.exports = cors(cache(60 * 60 * 1000, microFn)) // One hour data caching
