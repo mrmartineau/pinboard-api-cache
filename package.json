@@ -1,0 +1,25 @@
+{
+  "name": "pinboard-api-cache",
+  "version": "1.0.0",
+  "description": "A free, CORS-enabled version of the Pinboard public feeds API, but with a one hour cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "micro-dev",
+    "start": "micro"
+  },
+  "keywords": [
+    "pinboard",
+    "API"
+  ],
+  "author": "Zander Martineau",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "micro-cacheable": "^2.0.1",
+    "micro-cors": "^0.1.0"
+  },
+  "devDependencies": {
+    "micro-dev": "^2.2.2"
+  }
+}
